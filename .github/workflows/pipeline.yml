@@ -23,6 +23,8 @@ jobs:
         run: npm run build
       - name: Test
         run: npm test
+      - name: Install Cypress
+        run: npm install cypress
       - name: E2E test
         uses: cypress-io/github-action@v2
         with:
