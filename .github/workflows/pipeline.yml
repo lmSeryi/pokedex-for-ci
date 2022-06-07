@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
         with:
@@ -24,7 +24,7 @@ jobs:
       - name: Test
         run: npm test
       - name: Install Cypress
-        run: npm install cypress
+        run: npm install -D cypress
       - name: E2E test
         uses: cypress-io/github-action@v2
         with:
