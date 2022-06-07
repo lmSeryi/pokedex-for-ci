@@ -31,7 +31,6 @@ jobs:
         run: npm run eslint
   
   build:
-    needs: [lint]
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
