@@ -10,5 +10,6 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Echo the message
-        run: |
-          echo "Hola Sergio!"
+        run: echo "Hola Sergio!"
+      - run: ls -l
+      - run: date
